@@ -2,7 +2,7 @@
 
 # Brief
     
-    ![Test Image 1](Test 3 Paper Strip.png)
+![Test Image 1](https://github.com/njligames/ZebraQuestion3/blob/main/Test%203%20Paper%20Strip.png)
 
 
 ## Requirements
