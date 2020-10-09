@@ -49,7 +49,10 @@ int minPieces(const std::vector<int>& original, const std::vector<int>& desired)
         original_index = start_index;
         
     }
-    return min_cuts;
+    // My original submission returned the number of cuts, not the paper
+    // count which resulted from the cuts. For that requirement, that is
+    // just the minimum amount of cuts plus one.
+    return min_cuts + 1;
 }
 
 #ifndef RunTests
