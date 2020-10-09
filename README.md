@@ -2,13 +2,15 @@
 
 # Brief
     
+    ![Test Image 1](Test 3 Paper Strip.png)
+
 
 ## Requirements
-    * cmake
+* cmake
 
 ## Run
 
-    To run the test, in the terminal:
+To run the test, in the terminal:
 
-    `bash run.sh`
+`bash run.sh`
 
