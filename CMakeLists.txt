@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.10.2)
 
 project(ZebraTest VERSION 1.0.0.0)
 
+set(BUILT_GTEST TRUE)
+
 include(CheckCXXCompilerFlag)
 CHECK_CXX_COMPILER_FLAG("-std=c++11" COMPILER_SUPPORTS_CXX11)
 CHECK_CXX_COMPILER_FLAG("-std=c++0x" COMPILER_SUPPORTS_CXX0X)
@@ -13,5 +15,9 @@ else()
     message(STATUS "The compiler ${CMAKE_CXX_COMPILER} has no C++11 support. Please use a different C++ compiler.")
 endif()
 
-ADD_EXECUTABLE(ZebraQuestion3 main.cpp)
+add_library(${PROJECT_NAME}-static STATIC src/PaperStrip.cpp)
+
+add_executable(${PROJECT_NAME}-exe main.cpp)
+target_link_libraries(${PROJECT_NAME}-exe ${PROJECT_NAME}-static)
+target_include_directories(${PROJECT_NAME}-exe PUBLIC src)
 

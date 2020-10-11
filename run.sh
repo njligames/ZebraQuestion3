@@ -8,5 +8,5 @@ export CC=gcc export CXX=g++
 cmake ../
 make
 
-./ZebraQuestion3
+./ZebraTest-exe
 
